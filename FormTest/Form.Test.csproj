@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8FF550F7-1030-47B0-8A24-1E5AA9CD119B}</ProjectGuid>
+    <ProjectGuid>{FC7FFF8F-3227-4E04-969B-A7F8EDAD55E5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TDDProject</RootNamespace>
-    <AssemblyName>TDDProject</AssemblyName>
+    <RootNamespace>FormTest</RootNamespace>
+    <AssemblyName>FormTest</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -50,13 +50,15 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="CalculatorTest.cs" />
+    <Compile Include="CepTeste.cs" />
+    <Compile Include="EmailTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsuarioTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Calculator\Calculator.csproj">
-      <Project>{81ae5e33-ae27-4f80-9fb8-74a716ad758d}</Project>
-      <Name>Calculator</Name>
+    <ProjectReference Include="..\Form\Form.csproj">
+      <Project>{20d0cae1-aa1b-4b1a-af21-260a6d554d25}</Project>
+      <Name>Form</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
